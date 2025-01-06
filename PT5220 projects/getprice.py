@@ -5,7 +5,7 @@ import time
 def getPrice():
     symbol = 'AAPL'
     api_url = 'https://api.api-ninjas.com/v1/stockprice?ticker={}'.format(symbol)
-    response = requests.get(api_url, headers={'X-Api-Key': 'CnHd9c4mIiMB4/Zfyy39+Q==EGOTl8GsZk0ntPJP'})
+    response = requests.get(api_url, headers={'X-Api-Key': 'key'})
     if response.status_code == requests.codes.ok:
         return json.loads(response.text)['price']
     
